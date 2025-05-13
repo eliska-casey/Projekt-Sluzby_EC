@@ -1,0 +1,141 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    background-color: #FAFAFA;
+    font-family: "Montserrat", sans-serif;
+    color: #8B8B8B;
+    text-align: center;
+    font-size: 16px;
+    margin: 60px 20px;
+    
+}
+
+
+h1, h2, h3 {
+    color: black;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #FAFAFA;
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.tlacitko-1 {
+    background-color: #407BFF;
+}
+
+.tlacitko-2 {
+    background-color: #8B8B8B;
+}
+
+.sluzba {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin: 15px 0;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.sluzba p {
+    padding-left: 30px;
+}
+
+.happytraveller {
+    min-height: 290px;
+}
+
+@media screen and (min-width: 640px) {
+    .happytraveller {
+        min-height: 330px;
+    }
+
+    p {
+        margin: 60px 100px;
+    }
+
+    button {
+        display: inline;
+    }
+
+    .tlacitko-1 {
+        margin-right: 20px;
+    }
+       
+    h2 {
+        margin-top: 80px;
+    }
+    
+    .sluzby {
+		display: flex;
+        margin: 40px 20px;
+        gap: 20px;
+	}
+
+    .sluzba {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+   }
+
+   .sluzba p {
+        margin: 20px 14px;
+        padding-left: 0;
+   }
+
+}
+
+@media screen and (min-width: 1100px) {
+    header {
+        display: flex;
+        gap: 60px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    header svg, .hlavicka {
+        flex: 1 1 490px;
+    }
+
+    .hlavicka {
+        text-align: left;
+    }
+
+    body {
+        width: 1040px;
+        margin: 60px auto;
+    }
+
+    .happytraveller {
+        min-height: 355px;
+    }
+
+    p {
+        margin: 30px 0px;
+    }
+
+}
