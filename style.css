@@ -7,18 +7,28 @@ body {
     color: #8B8B8B;
     text-align: center;
     font-size: 16px;
+    font-weight: 300;
     margin: 60px 20px;
-    
+    line-height: 1.5;
 }
 
 
 h1, h2, h3 {
     color: black;
+    font-weight: 500;
 }
 
 h1 {
     font-size: 28px;
 }
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background-color: #0070f3;
+    margin: 5px auto;
+  }
+
 
 h2 {
     font-size: 16px;
@@ -58,11 +68,18 @@ p {
     margin: 15px 0;
     align-items: center;
     padding: 20px;
-    
+    gap: 20px;
 }
 
 .sluzba p {
-    padding-left: 30px;
+    font-size: 13px;
+    flex-grow: 1;
+    text-align: left;
+    margin: 0;
+}
+
+.sluzba svg {
+    width: 45px;
 }
 
 .happytraveller {
@@ -70,6 +87,10 @@ p {
 }
 
 @media screen and (min-width: 640px) {
+    body {
+        margin: auto;
+    }
+    
     .happytraveller {
         min-height: 330px;
     }
@@ -94,18 +115,23 @@ p {
 		display: flex;
         margin: 40px 20px;
         gap: 20px;
-	}
+
+    }
 
     .sluzba {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 40px;
+        height: 170px;
+        flex-grow: 1;
    }
 
    .sluzba p {
-        margin: 20px 14px;
+       
         padding-left: 0;
+        text-align: center;
+        width: 200px;
    }
 
 }
@@ -125,6 +151,10 @@ p {
         text-align: left;
     }
 
+    .underline {
+        margin: 5px 0;
+    }
+
     body {
         width: 1040px;
         margin: 60px auto;
@@ -132,10 +162,65 @@ p {
 
     .happytraveller {
         min-height: 355px;
+        max-width: 425px;
+        align-items: center;
+        padding: 0 32.5px;
     }
 
     p {
         margin: 30px 0px;
     }
 
+    header, section {
+        margin-bottom: 80px;
+    }
+
+    .cestovka {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+    }
+
+    .sluzby cestovky {
+        max-width: 550px;
+        flex: 1 1 50%;
+        gap: 20px;
+    }
+
+    .sluzba {
+        justify-content: space-between;
+        width: calc(500px / 3);
+        font-size: 13px;
+    }
+
+    .sluzba p {
+        width: 140px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 430px;
+        justify-content: center;
+    }
+
+    .info p {
+        margin: 0;
+    }
+
+    .delegati {
+        display: flex;
+        gap: 60px;
+        
+    }
+
+    .sluzby {
+        margin: 0;
+        width: 550px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
 }
